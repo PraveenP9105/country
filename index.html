@@ -6,10 +6,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+  <input type="text" id="searchInput" placeholder="Search country name..." class="search-box"/>
   <h1>Countries</h1>
   <div id="countries-container"></div>
   <div id="pagination" class="pagination"></div>
+  <!-- Modal -->
+  <div id="countryModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close" aria-label="Close modal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p><strong>Currency Symbol:</strong> <span id="modalCurrency"></span></p>
+      <p><strong>Latitude:</strong> <span id="modalLatitude"></span></p>
+      <p><strong>Borders:</strong> <span id="modalBorders"></span></p>
+      <p><strong>Region:</strong> <span id="modalRegion"></span></p>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 </html>
