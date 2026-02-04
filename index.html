@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>REST Countries</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <input type="text" id="searchInput" placeholder="Search country name..." class="search-box"/>
-  <h1>Countries</h1>
-  <div id="countries-container"></div>
-  <div id="pagination" class="pagination"></div>
-  <!-- Modal -->
-  <div id="countryModal" class="modal hidden">
-    <div class="modal-content">
-      <span id="closeModal" class="close" aria-label="Close modal">&times;</span>
-      <h2 id="modalTitle"></h2>
-      <p><strong>Currency Symbol:</strong> <span id="modalCurrency"></span></p>
-      <p><strong>Latitude:</strong> <span id="modalLatitude"></span></p>
-      <p><strong>Borders:</strong> <span id="modalBorders"></span></p>
-      <p><strong>Region:</strong> <span id="modalRegion"></span></p>
+  <head>
+    <meta charset="UTF-8">
+    <title>REST Countries</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <input type="text" id="searchInput" placeholder="Search country name..."
+      class="search-box" />
+    <h1>Countries</h1>
+    <div id="countries-container"></div>
+    <div id="pagination" class="pagination"></div>
+    <!-- Modal -->
+    <div id="countryModal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeModal" class="close"
+          aria-label="Close modal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p><strong>Currency Symbol:</strong> <span
+            id="modalCurrency"></span></p>
+        <p><strong>Latitude:</strong> <span id="modalLatitude"></span></p>
+        <p><strong>Borders:</strong> <span id="modalBorders"></span></p>
+        <p><strong>Region:</strong> <span id="modalRegion"></span></p>
+        <hr />
+        <h3>Weather Information</h3>
+        <p><strong>Temperature:</strong> <span id="modalTemp"></span></p>
+        <p><strong>Condition:</strong> <span id="modalCondition"></span></p>
+        <p><strong>Humidity:</strong> <span id="modalHumidity"></span></p>
+        <p><strong>Wind Speed:</strong> <span id="modalWind"></span></p>
+        <p><strong>Feels Like:</strong> <span id="modalRealFeel"></span></p>
+      </div>
     </div>
-  </div>
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
